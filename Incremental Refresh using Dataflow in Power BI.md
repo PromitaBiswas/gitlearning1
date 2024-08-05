@@ -44,9 +44,9 @@ the table level.
 
 3. After saving the dataflow, in the table view we need to select
 **Incremental Refresh** option.
-<img src="/images/IncrementalRefreshImages/Table View.png" alt="Table View" width="600">
+<img src="images/incremental refresh/Table View.png" alt="Table View" width="600">
 4. Once the setting window appears, turn on Incremental Refresh.
-<img src="/images/IncrementalRefreshImages/Incremental Refresh Setting.png" alt="Incremental Refresh Setting" width="600">
+<img src="images/incremental refresh/Incremental Refresh Setting.png" alt="Incremental Refresh Setting" width="600">
 
 Below is the description of the settings we need to configure.
 
@@ -76,8 +76,8 @@ Below is the description of the settings we need to configure.
 
 6. Next step will be to go to settings and configure scheduled refresh.
 
-<img src="/images/IncrementalRefreshImages/Schedule setting option.png" alt="Schedule setting option" width="600">
-<img src="/images/IncrementalRefreshImages/Schedule setting.png" alt="Schedule setting" width="600">
+<img src="images/incremental refresh/Schedule setting option.png" alt="Schedule setting option" width="600">
+<img src="images/incremental refresh/Schedule setting.png" alt="Schedule setting" width="600">
 
 ## Changing between incremental and full refresh
 
