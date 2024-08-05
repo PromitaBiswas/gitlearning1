@@ -1,0 +1,8 @@
+    #"Check Exist" =
+let
+    #"Check Column" =  if not Table.HasColumns(#"Pivoted Column","col1 for CYQTR") then Table.AddColumn(#"Pivoted Column", "S3474 for CYQTR",each null) else #"Pivoted Column",
+    #"Check Column1" = if not Table.HasColumns(#"Check Column","col1 for CYPQ") then Table.AddColumn(#"Check Column", "S3474 for CYPQ",each null) else #"Check Column",
+    #"Check Column2" = if not Table.HasColumns(#"Check Column1","col1 for PYQTR") then Table.AddColumn(#"Check Column1", "S3474 for PYQTR",each null) else #"Check Column1"
+
+in
+    #"Check Column2"
