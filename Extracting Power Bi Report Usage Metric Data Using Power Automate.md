@@ -16,23 +16,23 @@ Below solution shows how we can achieve this using Power Automate and save data 
 
 1.Create a Usage Metric report in the workspace for which usage data is needed. Now this dataset will be the data source.
 
-<img src="https://github.com/sede-x/powerbi-developer-guide/blob/Promita_July/images/UserMetrics/Picture1.png" alt="Pic1" width="600">
+<img src="images/usageMetric/Picture1.png" alt="Pic1" width="600">
 
 2.Open [Power Automate Portal](https://make.powerautomate.com/environments/e39bdacf-c4ae-4d0d-8d8a-3dd1373f1027/home) and create a scheduled flow.
 
-<img src="https://github.com/sede-x/powerbi-developer-guide/blob/Promita_July/images/UserMetrics/Picture2.png" alt="Pic1" width="600">
+<img src="images/usageMetric/Picture2.png" alt="Pic1" width="600">
 
 3.Provide flow name, choose the schedule occurrence, and click on create.
 
-<img src="https://github.com/sede-x/powerbi-developer-guide/blob/Promita_July/images/UserMetrics/Picture3.png" alt="Pic1" width="600">
+<img src="images/usageMetric/Picture3.png" alt="Pic1" width="600">
 
 4.Once you reach to below screen click “+” to add an action.
 
-<img src="https://github.com/sede-x/powerbi-developer-guide/blob/Promita_July/images/UserMetrics/Picture4.png" alt="Pic1" width="600">
+<img src="images/usageMetric/Picture4.png" alt="Pic1" width="600">
 
 5.Search Power Bi and select “Run a query against a dataset”.
 
-<img src="https://github.com/sede-x/powerbi-developer-guide/blob/Promita_July/images/UserMetrics/Picture5.png" alt="Pic1" width="600">
+<img src="images/usageMetric/Picture5.png" alt="Pic1" width="600">
 
 6.Select your workspace name and dataset from drop down. Add DAX query mentioned below. This will extract previous day’s data. Frequency can be changed according to need. If more information is needed, query can be altered to add more column using Power BI or DAX studio.
 
@@ -81,22 +81,22 @@ ORDER BY
 'Report views'[UserId],
 'Report views'[DistributionMethod]
 
-<img src="https://github.com/sede-x/powerbi-developer-guide/blob/Promita_July/images/UserMetrics/Picture6.png" alt="Pic1" width="600">
+<img src="images/usageMetric/Picture6.png" alt="Pic1" width="600">
 
 7.Add an action “Create CSV table” and select the following.
-<img src="https://github.com/sede-x/powerbi-developer-guide/blob/Promita_July/images/UserMetrics/Picture7.png" alt="Pic1" width="600">
+<img src="images/usageMetric/Picture7.png" alt="Pic1" width="600">
 
 8.Next action will be saving the file in SharePoint location. Select an action “Create file” in SharePoint.
 
-<img src="https://github.com/sede-x/powerbi-developer-guide/blob/Promita_July/images/UserMetrics/Picture8.png" alt="Pic1" width="600">
+<img src="images/usageMetric/Picture8.png" alt="Pic1" width="600">
 
 9.Add values in the parameters as below and save the flow. Timestamp need to be added in “File Name” so that at every run it creates a new file.
 
-<img src="https://github.com/sede-x/powerbi-developer-guide/blob/Promita_July/images/UserMetrics/Picture9.png" alt="Pic1" width="600">
+<img src="images/usageMetric/Picture9.png" alt="Pic1" width="600">
 
 10.In SharePoint Directory files will be created like below and it can be accessed from Power BI for further reporting.
 
-<img src="https://github.com/sede-x/powerbi-developer-guide/blob/Promita_July/images/UserMetrics/Picture10.png" alt="Pic1" width="600">
+<img src="images/usageMetric/Picture10.png" alt="Pic1" width="600">
 
 ## Connection to Power BI
 
@@ -104,19 +104,19 @@ To build customized report, Power BI need to fetch data from SharePoint folder. 
 
 * Open Power Bi desktop and from get data connect “SharePoint folder”.
 
-<img src="https://github.com/sede-x/powerbi-developer-guide/blob/Promita_July/images/UserMetrics/Picture11.png" alt="Pic1" width="600">
+<img src="images/usageMetric/Picture11.png" alt="Pic1" width="600">
 
 * Once below screen pops up, provide the SharePoint folder URL, click “OK”. Click on “Transform Data” in next screen.
 
-<img src="https://github.com/sede-x/powerbi-developer-guide/blob/Promita_July/images/UserMetrics/Picture12.png" alt="Pic1" width="600">
+<img src="images/usageMetric/Picture12.png" alt="Pic1" width="600">
 
-<img src="https://github.com/sede-x/powerbi-developer-guide/blob/Promita_July/images/UserMetrics/Picture13.png" alt="Pic1" width="600">
+<img src="images/usageMetric/Picture13.png" alt="Pic1" width="600">
 
 * Filter the data to get files only from the document library where usage data is getting stored.
 
 * Expand the “Content” column, once below screen comes click “OK”.
 
-<img src="https://github.com/sede-x/powerbi-developer-guide/blob/Promita_July/images/UserMetrics/Picture14.png" alt="Pic1" width="600">
+<img src="images/usageMetric/Picture14.png" alt="Pic1" width="600">
 
 * Now data is ready to build report on.
 
