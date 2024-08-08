@@ -18,7 +18,7 @@ Below solution shows how we can achieve this using Power Automate and save data 
 
 <img src="images/usageMetric/Picture1.png" alt="Pic1" width="600">
 
-2.Open [Power Automate Portal](https://make.powerautomate.com/environments/e39bdacf-c4ae-4d0d-8d8a-3dd1373f1027/home) and create a scheduled flow.
+2.Open Power Automate Portal and create a scheduled flow.
 
 <img src="images/usageMetric/Picture2.png" alt="Pic1" width="600">
 
