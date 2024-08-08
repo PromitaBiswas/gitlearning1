@@ -27,7 +27,6 @@ By using below solution, we are uploading multiple files of various types into S
 5.Now create a Power Automate Flow.
 <img src="images/bulk upload PA/Picture5.png" alt="Pic12" width="300">
 
-<img src="https://github.com/sede-x/powerbi-developer-guide/blob/Promita_June/images/bulk_upload_pa/Picture5.png" alt="Pic5" width="600">
 
 6.Select file as a user input.
 <img src="images/bulk upload PA/Picture6.png" alt="Pic6" width="600">
