@@ -10,7 +10,7 @@ By using below solution, we are uploading multiple files of various types into S
 
 ### Steps
 
-1.Open [Power Apps portal](https://make.powerapps.com/) and create a blank canvas app with appropriate name.
+1.Open Power Apps portal and create a blank canvas app with appropriate name.
 <img src="images/bulk upload PA/Picture1.png" alt="Pic1" width="600">
 
 2.As Power Apps does not have Attachment control directly, we will add a data source which has an attachment field and create a Form.
@@ -25,9 +25,8 @@ By using below solution, we are uploading multiple files of various types into S
 4.To remove the errors, remove the values from Tooltips and Items property. Change the BorderColor to Color.Black and DisplayMode to DisplayMode.Edit.
 
 5.Now create a Power Automate Flow.
-<img src="images/bulk upload PA/Picture5.png" alt="Pic12" width="300">
+<img src="images/bulk upload PA/Picture5.png" alt="Pic5" width="300">
 
-<img src="https://github.com/sede-x/powerbi-developer-guide/blob/Promita_June/images/bulk_upload_pa/Picture5.png" alt="Pic5" width="600">
 
 6.Select file as a user input.
 <img src="images/bulk upload PA/Picture6.png" alt="Pic6" width="600">
